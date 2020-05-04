@@ -1,0 +1,70 @@
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+	background-color: rgba(25, 25, 25, 255);
+    color: #efefef;
+	margin: 0;
+	display: flex;
+    font-family: "Sans-serif", Verdana, "Lucida Console";
+
+	/* This centers our sketch horizontally. */
+	justify-content: center;
+
+	/* This centers our sketch vertically. */
+	align-items: center;
+}
+.body,
+.wrapper {
+  /* Break the flow */
+  position: absolute;
+  top: 0px;
+
+  /* Give them all the available space */
+  width: 100%;
+  height: 100%;
+
+  /* Remove the margins if any */
+  margin: 0;
+
+  /* Allow them to scroll down the document */
+  overflow-y: hidden;
+}
+
+.body {
+  /* Sending body at the bottom of the stack */
+  z-index: 1;
+}
+
+.wrapper {
+  /* Making the wrapper stack above the body */
+  z-index: 2;
+}
+
+
+.content {
+  background-color: rgba(10, 100, 200,0);
+}
+
+a {
+  width: 90%;
+  margin: 0;
+  text-decoration: none;
+}
+
+#btn {
+  background-color: rgb(19, 68, 216);
+  padding: 0.5em;
+  margin: 0 auto;
+  border-radius: 0.25em;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+video {
+  display:none;
+}
