@@ -23,12 +23,6 @@ app.set( "view engine", "ejs" );
 
 app.use("/",  express.static( path.join( __dirname, "public" )) );
 
-// app.get('/', (req: Request, res: Response) => {
-//     res.send({
-//         message: 'hello world',
-//     });
-// });
-
 app.get("/", (req: Request, res: Response) => {
     res.render("index");
 });

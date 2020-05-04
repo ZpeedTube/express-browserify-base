@@ -1,4 +1,4 @@
 
-import * as path from "path";
-
-console.log("entry test");
+window.onload = () => {
+    console.log("entry test");
+};
