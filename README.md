@@ -1,4 +1,4 @@
-# express-browserify-example
+# express-browserify-base
 A example/base project for express with browserify.
 Express view engine uses the ejs by default.
 
